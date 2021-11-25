@@ -51,9 +51,5 @@ nnoremap ss :w<CR>
 nnoremap qq :wq<CR>
 nnoremap qs :q!<CR>
 nnoremap so :source %<CR>
-            
-if &filetype=='.js'
-    nnoremap run :w<CR>:!python3 %<CR>
-endif
 
 hi Normal guibg=NONE ctermbg=NONE
