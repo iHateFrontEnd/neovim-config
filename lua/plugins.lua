@@ -1,0 +1,18 @@
+return require('packer').startup(function()
+	use 'wbthomason/packer.nvim'
+	use 'gruvbox-community/gruvbox'
+    use 'yuezk/vim-js'
+    use 'maxmellon/vim-jsx-pretty'
+    use 'morhetz/gruvbox'
+    use 'preservim/nerdtree'
+    use 'kyazdani42/nvim-web-devicons'
+    use 'romgrk/barbar.nvim'
+    use 'nvim-lua/plenary.nvim'
+    use 'nvim-telescope/telescope.nvim'
+    use 'nmac427/guess-indent.nvim'
+    use 'Darazaki/indent-o-matic'
+    use 'joshdick/onedark.vim'
+    use 'vim-airline/vim-airline'
+    use 'vim-airline/vim-airline-themes'
+    use 'xiyaowong/nvim-transparent'
+end)
