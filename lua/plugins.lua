@@ -1,10 +1,14 @@
 return require('packer').startup(function()
+	use "lukas-reineke/indent-blankline.nvim"
 	use 'wbthomason/packer.nvim'
-	use 'gruvbox-community/gruvbox'
+	use 'Mofiqul/vscode.nvim'
+	use { "nvim-telescope/telescope-file-browser.nvim" }
+	use 'xiyaowong/nvim-transparent'
+	use 'jiangmiao/auto-pairs'
     use 'yuezk/vim-js'
+	use 'gruvbox-community/gruvbox'
     use 'maxmellon/vim-jsx-pretty'
-    use 'morhetz/gruvbox'
-    use 'preservim/nerdtree'
+	use 'tomasiser/vim-code-dark'
     use 'kyazdani42/nvim-web-devicons'
     use 'romgrk/barbar.nvim'
     use 'nvim-lua/plenary.nvim'
@@ -14,5 +18,4 @@ return require('packer').startup(function()
     use 'joshdick/onedark.vim'
     use 'vim-airline/vim-airline'
     use 'vim-airline/vim-airline-themes'
-    use 'xiyaowong/nvim-transparent'
 end)
