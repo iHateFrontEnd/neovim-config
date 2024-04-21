@@ -1,3 +1,5 @@
+vim.cmd [[packadd packer.nvim]]
+
 return require('packer').startup(function()
 	use "lukas-reineke/indent-blankline.nvim"
 	use 'wbthomason/packer.nvim'
@@ -18,4 +20,16 @@ return require('packer').startup(function()
     use 'joshdick/onedark.vim'
     use 'vim-airline/vim-airline'
     use 'vim-airline/vim-airline-themes'
+	use 'olimorris/onedarkpro.nvim'
+	use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+	use {
+	  'VonHeikemen/lsp-zero.nvim',
+	  branch = 'v3.x',
+	  requires = {
+		{'neovim/nvim-lspconfig'},
+		{'hrsh7th/nvim-cmp'},
+		{'hrsh7th/cmp-nvim-lsp'},
+		{'L3MON4D3/LuaSnip'},
+	  }
+	}
 end)
