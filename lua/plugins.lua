@@ -15,11 +15,8 @@ return require('packer').startup(function()
     use 'romgrk/barbar.nvim'
     use 'nvim-lua/plenary.nvim'
     use 'nvim-telescope/telescope.nvim'
-    use 'nmac427/guess-indent.nvim'
     use 'Darazaki/indent-o-matic'
     use 'joshdick/onedark.vim'
-    use 'vim-airline/vim-airline'
-    use 'vim-airline/vim-airline-themes'
 	use 'olimorris/onedarkpro.nvim'
 	use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 	use {
@@ -31,5 +28,9 @@ return require('packer').startup(function()
 		{'hrsh7th/cmp-nvim-lsp'},
 		{'L3MON4D3/LuaSnip'},
 	  }
+	}
+	use {
+	  'nvim-lualine/lualine.nvim',
+	  requires = { 'nvim-tree/nvim-web-devicons', opt = true }
 	}
 end)
