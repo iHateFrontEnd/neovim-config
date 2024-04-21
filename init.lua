@@ -2,4 +2,4 @@ require('plugins')
 require('sets')
 require('keymaps')
 
-vim.cmd[[colorscheme gruvbox]]
+vim.cmd[[colorscheme onedark]]
